@@ -36,7 +36,7 @@ func (r *mutationResolver) UpdateUser(ctx context.Context, id int, changes map[s
 }
 ```
 
-We often use the mapstructure library to directly apply these changesets directly to the object using reflection:
+We often use the mapstructure library to apply these changesets directly to the object by using reflection:
 ```go
 
 func ApplyChanges(changes map[string]interface{}, to interface{}) error {
