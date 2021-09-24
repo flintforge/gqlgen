@@ -99,8 +99,8 @@ models:
 
 ## Custom scalars with third party types
 
-Sometimes you are unable to add add methods to a type - perhaps you don't own the type, or it is part of the standard
-library (eg string or time.Time). To support this we can build an external marshaler:
+Sometimes you are unable to add methods to a type — perhaps you don't own the type, or it is part of the standard
+library (e.g. string or time.Time). To support this, we can build an external marshaler:
 
 ```go
 package mypkg
